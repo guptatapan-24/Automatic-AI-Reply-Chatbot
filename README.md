@@ -26,7 +26,8 @@ Before running the script, ensure you have the following installed:
 ## Installation Instructions
 You can install the required packages using pip:
 
-`pip install pyautogui pyperclip keyboard google-generativeai`
+    ```bash
+    pip install pyautogui pyperclip keyboard google-generativeai`
 
 ## Usage Instructions
 1. **Run the Script:**
