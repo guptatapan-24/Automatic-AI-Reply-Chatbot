@@ -1,6 +1,7 @@
 import pyautogui
 import pyperclip
 import time
+import os
 from google import generativeai as genai
 
 # Give a short delay before the script runs
@@ -35,7 +36,11 @@ while True:
 
     if is_last_message_from_sender(chat_history, "Siddhesh"):
         def gemini(command):
-            genai.configure(api_key="AIzaSyA9Ga8vh5vpzCAta3IWr7b_LZIHp_u3FOM")
+            # Access API key from environment variable
+            api_key = os.getenv('API_KEY')
+
+            # Use the api_key in your code
+            genai.configure(api_key=api_key)
 
             model = genai.GenerativeModel("gemini-1.5-flash")
             response = model.generate_content(f"You are a person named Tapan, who speaks Hindi as well as English. You are from India, study in RVCE Bengaluru and are a coder. You have to analyze the chat history and respond like Tapan. Respond after properly analyzing the chat. Output should be the next chat response. Don't include the message time and date in your response. Reply in english if the sender types in english, else in Hindi. {command}")
