@@ -64,10 +64,14 @@ This project is licensed under the MIT License. See the LICENSE file for details
 For support or inquiries, please contact:
 
 Name: Tapan Gupta
+
 Email: gupta.tapan2006@gmail.com
 
 ## Acknowledgments
 Google Generative AI for providing the AI capabilities.
+
 PyAutoGUI for GUI automation.
+
 Pyperclip for clipboard management.
+
 Keyboard for handling hotkeys.
